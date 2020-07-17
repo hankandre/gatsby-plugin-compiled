@@ -17,9 +17,9 @@
     "@compiled/babel-plugin-css-in-js": "^0.4.7"
   },
   "peerDependencies": {
-    "@babel/core": "*",
-    "@compiled/css-in-js": "*",
-    "gatsby": "*"
+    "@babel/core": "^7.0.0",
+    "@compiled/css-in-js": "^0.4.7",
+    "gatsby": "^2.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -43,6 +43,7 @@
     "url": "https://github.com/hankandre/gatsby-plugin-compiled"
   },
   "engines": {
-    "node": ">=12.18.1"
-  }
+    "node": ">=10.13.0"
+  },
+  "version": "0.0.1"
 }
