@@ -1,0 +1,48 @@
+{
+  "name": "gatsby-plugin-compiled",
+  "description": "Gatsby plugin to add support for Compiled CSS-in-JS",
+  "author": "Hank Andre <hank.andre@hey.com>",
+  "bugs": {
+    "url": "https://github.com/hankandre/gatsby-plugin-compiled/issues"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:ci": "jest --ci",
+    "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore \"**/__tests__\""
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.5",
+    "@compiled/babel-plugin-css-in-js": "^0.4.7"
+  },
+  "peerDependencies": {
+    "@babel/core": "*",
+    "@compiled/css-in-js": "*",
+    "gatsby": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "babel-jest": "^26.1.0",
+    "babel-preset-gatsby-package": "^0.5.2",
+    "cross-env": "^7.0.2",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "compiled",
+    "css-in-js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hankandre/gatsby-plugin-compiled"
+  },
+  "engines": {
+    "node": ">=12.18.1"
+  }
+}
